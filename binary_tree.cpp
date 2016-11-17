@@ -104,7 +104,7 @@ T BinaryTree<T>::find(int key) {
     Node** tmp = &head;
 
     // Search node with this key
-    while(tmp != nullptr) {
+    while(*tmp != nullptr) {
         Node* const node = *tmp;
 
         if (key > node->key)
